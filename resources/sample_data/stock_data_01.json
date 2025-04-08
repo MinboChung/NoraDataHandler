@@ -1,0 +1,5 @@
+[
+    { "warehouse": "A", "part_number": "PN001", "quantity": 40 },
+    { "warehouse": "B", "part_number": "PN001", "quantity": 60 }
+  ]
+  
