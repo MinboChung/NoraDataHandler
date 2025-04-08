@@ -37,4 +37,27 @@ public class DatabaseManager {
             System.err.println("Insert failed: " + e.getMessage());
         }
     }
+
+    public static void printAllStock() {
+        String query = "SELECT id, warehouse, part_number, quantity FROM warehouse_stock";
+
+        try (Connection conn = DriverManager.getConnection(DB_URL);
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
+
+            System.out.println("📦 Current warehouse stock:");
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String warehouse = rs.getString("warehouse");
+                String part = rs.getString("part_number");
+                int quantity = rs.getInt("quantity");
+
+                System.out.printf("ID: %d | Warehouse: %s | Part: %s | Quantity: %d%n",
+                        id, warehouse, part, quantity);
+            }
+
+        } catch (SQLException e) {
+            System.err.println("Failed to read from database: " + e.getMessage());
+        }
+    }
 }
