@@ -1,13 +1,13 @@
 pipeline {
     agent any
     tools {
-        jdk 'jdk17' // or whatever JDK version is installed in Jenkins
+        jdk 'jdk17'
         maven 'maven3'
     }
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/nora-data-handler-sim.git'
+                git 'https://github.com/minbochung/nora-data-handler-sim.git'
             }
         }
         stage('Build') {
