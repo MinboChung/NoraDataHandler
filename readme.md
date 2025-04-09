@@ -2,7 +2,7 @@
 
 ## ✅ Project Roadmap
 
-1. **🧾 Read from SQLite**
+1. **🧾 Read from SQLite** ✅ DONE
    - Create a method that queries and prints all records from the `warehouse_stock` table.
    - Useful for verifying inserts and debugging.
 
