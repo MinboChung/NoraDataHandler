@@ -26,3 +26,7 @@
 7. **📘 Notion Proposal for Internship**
    - Document project objectives, key components, screenshots, and outcomes.
    - Include links to GitHub repo and relevant demo videos or diagrams.
+
+8. **📘 Smart methods for data storing**
+   - Smart may mean coming up with new idea, but based on my learnings, smart means also to supply the real demand.
+   - Real demand requires empirical and subjective evidences. 
